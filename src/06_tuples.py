@@ -34,11 +34,14 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 
 # Write a function `print_tuple` that prints all the values in a tuple
 
-# YOUR CODE HERE
+def print_tuple(tuple):
+    for t in tuple:
+        print(t)
 
 t = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+# ANSWER: A comma tells the compiler that we're in a tuple, but by not writing in a 2nd expression, it has length 1
+u = (1,)
 print_tuple(u)
